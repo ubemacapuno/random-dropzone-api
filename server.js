@@ -27,6 +27,28 @@ const chemical = new RebirthPOI("Chemical Engineering", "Rebirth Island")
 const decon = new RebirthPOI("Decon Zone", "Rebirth Island")
 const bio = new RebirthPOI("Bioweapon Labs", "Rebirth Island")
 
+class CalderaPOI {
+    constructor(dropzone, map){
+        this.dropzone = dropzone
+        this.map = map
+    }
+}
+const arsenal = new CalderaPOI("Arsenal","Caldera")
+const docksCaldera = new CalderaPOI("Docks","Caldera")
+const runway = new CalderaPOI("Runway","Caldera")
+const ruins = new CalderaPOI("Ruins","Caldera")
+const mines = new CalderaPOI("Mines","Caldera")
+const peak = new CalderaPOI("Peak","Caldera")
+const beachHead = new CalderaPOI("Beach Head","Caldera")
+const village= new CalderaPOI("Village","Caldera")
+const lagoon = new CalderaPOI("Lagoon","Caldera")
+const airfield = new CalderaPOI("Airfield","Caldera")
+const fields = new CalderaPOI("Fields","Caldera")
+const subPen = new CalderaPOI("Sub Pen","Caldera")
+const powerPlant = new CalderaPOI("Power Plant","Caldera")
+const capital = new CalderaPOI("Capital","Caldera")
+const resort = new CalderaPOI("Resort","Caldera")
+
 app.get('/api/', (request, response)=>{ //looks like an EVENT LISTENER! Instead of a "click", it is a network request. 
     response.sendFile(__dirname + '/index.html') //Server will respond with this file, but it has to find it first! That's why we add  __dirname + (root folder to start looking)   
 })
@@ -61,9 +83,65 @@ app.get('/random/', (request, response)=>{
     }else if(randomNum == 13){
         randomDropZone = stronghold
     }else{
-        console.log("Error in Random function")
+        randomDropZone = "Error in Random 1 calculation"
+        console.log("Error in Random 1 calculation")
     }
     response.json(randomDropZone.dropzone)
+})
+
+app.get('/random2/', (request, response)=>{ 
+    let randomNum = Math.ceil(Math.random()*15)
+    let randomDropZoneTwo = ""
+    switch (randomNum){
+        case 1:
+            randomDropZoneTwo = arsenal;
+            break;
+        case 2:
+            randomDropZoneTwo = docksCaldera;
+            break;
+        case 3:
+            randomDropZoneTwo = runway;
+            break;
+        case 4:
+            randomDropZoneTwo = ruins;
+            break;
+        case 5:
+            randomDropZoneTwo = mines;
+            break;
+        case 6:
+            randomDropZoneTwo = peak;
+            break;
+        case 7:
+            randomDropZoneTwo = beachHead;
+            break;
+        case 8:
+            randomDropZoneTwo = village;
+            break;
+        case 9:
+            randomDropZoneTwo = lagoon;
+            break;
+        case 10:
+            randomDropZoneTwo = airfield;
+            break;
+        case 11:
+            randomDropZoneTwo = fields;
+            break;
+        case 12:
+            randomDropZoneTwo = subPen;
+            break;
+        case 13:
+            randomDropZoneTwo = powerPlant;
+            break;
+        case 14:
+            randomDropZoneTwo = capital;
+            break;
+        case 15:
+            randomDropZoneTwo = resort;
+            break;
+        default:
+            randomDropZoneTwo = ' Encountered error in Random 2 calculation!'
+    }
+    response.json(randomDropZoneTwo.dropzone)
 })
 
 app.listen(process.env.PORT || PORT, ()=>{ //process.env.PORT basically says use whatever port Heroku or host provides us.
