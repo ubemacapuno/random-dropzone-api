@@ -14,6 +14,7 @@ The API URL links used can be found hosted on Herokuapp.com <a target="_blank" h
 ## How It's Made:
 
 **Tech used:** 
+
 Back-end: JavaScript/Node/Express, and API hosting on Herokuapp.com
 Front-end: JavaScript, HTML, CSS
 
