@@ -1,6 +1,6 @@
-# COD: Warzone - Random DropZone API: Visit the <a target="_blank" href="https://codepen.io/corey-damocles/pen/RwQdeWG">Front-End Application Here on codepen.io</a>!
+# Random DropZone API (COD - Warzone): Visit the <a target="_blank" href="https://codepen.io/corey-damocles/pen/RwQdeWG">Front-End Application Here on codepen.io</a>!
 
-This API randomly generates map locations for the videogame, Call of Duty: Warzone where players can land and start their Battle Royale experience! The current maps for these APIs are Rebirth Island and Caldera.
+This API randomly generates map locations for the videogame, Call of Duty: Warzone where players can land and start their Battle Royale experience! The maps for these APIs are Rebirth Island and Caldera.
 
 The URL links used can be found hosted on Herokuapp.com <a target="_blank" href="\https://random-rebirth-island-api.herokuapp.com/random">here</a> and <a target="_blank" href="https://random-rebirth-island-api.herokuapp.com/random2">here</a>.
 
@@ -13,7 +13,7 @@ The URL links used can be found hosted on Herokuapp.com <a target="_blank" href=
 ## How It's Made:
 
 **Tech used:** 
-JavaScript/Node/Express, HTML, CSS, and API hosting on <a target="_blank" href="\https://random-rebirth-island-api.herokuapp.com/random">Heroku</a>.
+JavaScript/Node/Express, HTML, CSS, and API hosting on <a target="_blank" href="\https://random-rebirth-island-api.herokuapp.com/random">Herokuapp.com</a>.
 
 To use this repository, please be sure to install the proper packages with <strong>npm -install</strong>.
 
