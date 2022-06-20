@@ -17,7 +17,7 @@ The API URL links used can be found hosted on Herokuapp.com <a target="_blank" h
 Back-end: JavaScript/Node/Express, and API hosting on Herokuapp.com
 Front-end: JavaScript, HTML, CSS
 
-To use this repository, please be sure to install the proper packages with <strong>npm -install</strong>.
+To use this repository, please be sure to install the proper packages with <strong>npm -install</strong>
 
 ## Optimizations:
 
@@ -25,4 +25,4 @@ As I learn more, I'd like to apply additional CRUD features (Create/Post, Read/G
 
 ## Lessons Learned:
 
-I learned that Express.js abstracts a lot of the code away when developing a back-end server in Node, making the development of RESTful APIs a breeze.
+I learned that Express.js abstracts a lot of the code away when developing a back-end server in Node, making the development of RESTful APIs simple.
