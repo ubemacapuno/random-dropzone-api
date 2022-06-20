@@ -3,7 +3,7 @@
 
 This API randomly generates map locations for the videogame, Call of Duty: Warzone where players can land and start their Battle Royale experience! The maps for these APIs are Rebirth Island and Caldera.
 
-The URL links used can be found hosted on Herokuapp.com <a target="_blank" href="https://random-rebirth-island-api.herokuapp.com/random">here</a>.
+The API URL links used can be found hosted on Herokuapp.com <a target="_blank" href="https://random-rebirth-island-api.herokuapp.com/random">here</a> and <a target="_blank" href="https://random-rebirth-island-api.herokuapp.com/random2">here</a>.
 
  <tr>
     <td width="100%"  style="align:center;" valign="top">
