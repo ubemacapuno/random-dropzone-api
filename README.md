@@ -17,6 +17,8 @@ The API URL links used can be found hosted on Herokuapp.com <a target="_blank" h
 
 Back-end: JavaScript/Node/Express, and API hosting on Herokuapp.com
 
+<i>***Please Note***:</i> The server is hosted on a free Herokuapp.com account, so please allow 15-30 seconds for the server/dyno to wake up and respond.
+
 Front-end: JavaScript, HTML, CSS
 
 To use this repository, please be sure to install the proper packages with:
