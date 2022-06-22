@@ -16,6 +16,7 @@ The API URL links used can be found hosted on Herokuapp.com <a target="_blank" h
 **Tech used:** 
 
 Back-end: JavaScript/Node/Express, and API hosting on Herokuapp.com
+
 Front-end: JavaScript, HTML, CSS
 
 To use this repository, please be sure to install the proper packages with <strong>npm -install</strong>
