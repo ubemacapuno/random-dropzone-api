@@ -23,7 +23,7 @@ To use this repository, please be sure to install the proper packages with:
 
 ``npm -install``
 
-Start up the server with:
+Start up the server using Node with:
 
 ``node server.js``
 
