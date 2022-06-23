@@ -166,49 +166,49 @@ app.get('/random2/', (request, response)=>{
 })
 
 app.get('/random3/', (request, response)=>{ 
-    let randomNum = Math.ceil(Math.random()*15)
+    let randomNum = Math.ceil(Math.random()*12)
     let randomDropZoneThree = ""
     switch (randomNum){
         case 1:
-            randomDropZoneTwo = town;
+            randomDropZoneThree = town;
             break;
         case 2:
-            randomDropZoneTwo = overlook;
+            randomDropZoneThree = overlook;
             break;
         case 3:
-            randomDropZoneTwo = graveyard;
+            randomDropZoneThree = graveyard;
             break;
         case 4:
-            randomDropZoneTwo = grotto;
+            randomDropZoneThree = grotto;
             break;
         case 5:
-            randomDropZoneTwo = smugglersCove;
+            randomDropZoneThree = smugglersCove;
             break;
         case 6:
-            randomDropZoneTwo = gatehouse;
+            randomDropZoneThree = gatehouse;
             break;
         case 7:
-            randomDropZoneTwo = terraces;
+            randomDropZoneThree = terraces;
             break;
         case 8:
-            randomDropZoneTwo = keep;
+            randomDropZoneThree = keep;
             break;
         case 9:
-            randomDropZoneTwo = bay;
+            randomDropZoneThree = bay;
             break;
         case 10:
-            randomDropZoneTwo = winery;
+            randomDropZoneThree = winery;
             break;
         case 11:
-            randomDropZoneTwo = lighthouse;
+            randomDropZoneThree = lighthouse;
             break;
         case 12:
-            randomDropZoneTwo = camp;
+            randomDropZoneThree = camp;
             break;
         default:
-            randomDropZoneTwo = 'Encountered error in Random 3 calculation!'
+            randomDropZoneThree = 'Encountered error in Random 3 calculation!'
     }
-    response.json(randomDropZoneTwo.dropzone)
+    response.json(randomDropZoneThree.dropzone)
 })
 
 app.listen(process.env.PORT || PORT, ()=>{ //process.env.PORT basically says use whatever port Heroku or host provides us.
