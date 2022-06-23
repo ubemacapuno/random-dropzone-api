@@ -3,7 +3,9 @@
 
 This API randomly generates map locations for the videogame, Call of Duty: Warzone where players can land and start their Battle Royale experience. The maps for these APIs are Rebirth Island, Caldera, and Fortune's Keep.
 
-The API is hosted on Herokuapp.com 
+The API is hosted on Herokuapp.com
+
+<i><strong>*Please Note:</strong> The server is hosted on a free Herokuapp.com account, so please allow 15-30 seconds for their dyno to respond.</i>
 
  <tr>
     <td width="100%"  style="align:center;" valign="top">
@@ -16,8 +18,6 @@ The API is hosted on Herokuapp.com
 **Tech used:** 
 
 Back-end: JavaScript/Node/Express, and API hosting on Herokuapp.com
-
-<i><strong>*Please Note:</strong> The server is hosted on a free Herokuapp.com account, so please allow 15-30 seconds for their dyno to respond.</i>
 
 Front-end: JavaScript, HTML, CSS
 
