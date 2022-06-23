@@ -48,6 +48,9 @@ const subPen = new CalderaPOI("Sub Pen","Caldera")
 const powerPlant = new CalderaPOI("Power Plant","Caldera")
 const capital = new CalderaPOI("Capital","Caldera")
 const resort = new CalderaPOI("Resort","Caldera")
+const digSite = new CalderaPOI("Dig Site","Caldera")
+const storageTown = new CalderaPOI("Storage Town","Caldera")
+const gondola = new CalderaPOI("Gondola Station","Caldera")
 
 class FortunesKeepPOI {
     constructor(dropzone, map){
@@ -111,7 +114,7 @@ app.get('/random/', (request, response)=>{
 })
 
 app.get('/random2/', (request, response)=>{ 
-    let randomNum = Math.ceil(Math.random()*15)
+    let randomNum = Math.ceil(Math.random()*18)
     let randomDropZoneTwo = ""
     switch (randomNum){
         case 1:
@@ -158,6 +161,15 @@ app.get('/random2/', (request, response)=>{
             break;
         case 15:
             randomDropZoneTwo = resort;
+            break;
+        case 16:
+            randomDropZoneTwo = digSite;
+            break;
+        case 17:
+            randomDropZoneTwo = storageTown;
+            break;
+        case 18:
+            randomDropZoneTwo = gondola;
             break;
         default:
             randomDropZoneTwo = ' Encountered error in Random 2 calculation!'
