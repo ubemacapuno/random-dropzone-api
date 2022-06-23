@@ -49,6 +49,27 @@ const powerPlant = new CalderaPOI("Power Plant","Caldera")
 const capital = new CalderaPOI("Capital","Caldera")
 const resort = new CalderaPOI("Resort","Caldera")
 
+class FortunesKeepPOI {
+    constructor(dropzone, map){
+        this.dropzone = dropzone
+        this.map = map
+    }
+}
+const town = new FortunesKeepPOI("Town","Fortune\'s Keep")
+const overlook = new FortunesKeepPOI("Overlook","Fortune\'s Keep")
+const graveyard = new FortunesKeepPOI("Graveyard","Fortune\'s Keep")
+const grotto = new FortunesKeepPOI("Grotto","Fortune\'s Keep")
+const smugglersCove = new FortunesKeepPOI("Smuggler's Cove","Fortune\'s Keep")
+const gatehouse = new FortunesKeepPOI("Gatehouse","Fortune\'s Keep")
+const terraces = new FortunesKeepPOI("Terraces","Fortune\'s Keep")
+const keep = new FortunesKeepPOI("Keep","Fortune\'s Keep")
+const bay = new FortunesKeepPOI("Bay", "Fortune\'s Keep")
+const winery = new FortunesKeepPOI("Winery", "Fortune\'s Keep")
+const lighthouse = new FortunesKeepPOI("Lighthouse", "Fortune\'s Keep")
+const camp = new FortunesKeepPOI("Camp", "Fortune\'s Keep")
+
+
+
 app.get('/api/', (request, response)=>{ //looks like an EVENT LISTENER! Instead of a "click", it is a network request. 
     response.sendFile(__dirname + '/index.html') //Server will respond with this file, but it has to find it first! That's why we add  __dirname + (root folder to start looking)   
 })
@@ -140,6 +161,52 @@ app.get('/random2/', (request, response)=>{
             break;
         default:
             randomDropZoneTwo = ' Encountered error in Random 2 calculation!'
+    }
+    response.json(randomDropZoneTwo.dropzone)
+})
+
+app.get('/random3/', (request, response)=>{ 
+    let randomNum = Math.ceil(Math.random()*15)
+    let randomDropZoneThree = ""
+    switch (randomNum){
+        case 1:
+            randomDropZoneTwo = town;
+            break;
+        case 2:
+            randomDropZoneTwo = overlook;
+            break;
+        case 3:
+            randomDropZoneTwo = graveyard;
+            break;
+        case 4:
+            randomDropZoneTwo = grotto;
+            break;
+        case 5:
+            randomDropZoneTwo = smugglersCove;
+            break;
+        case 6:
+            randomDropZoneTwo = gatehouse;
+            break;
+        case 7:
+            randomDropZoneTwo = terraces;
+            break;
+        case 8:
+            randomDropZoneTwo = keep;
+            break;
+        case 9:
+            randomDropZoneTwo = bay;
+            break;
+        case 10:
+            randomDropZoneTwo = winery;
+            break;
+        case 11:
+            randomDropZoneTwo = lighthouse;
+            break;
+        case 12:
+            randomDropZoneTwo = camp;
+            break;
+        default:
+            randomDropZoneTwo = 'Encountered error in Random 3 calculation!'
     }
     response.json(randomDropZoneTwo.dropzone)
 })
