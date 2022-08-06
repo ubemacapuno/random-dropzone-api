@@ -21,14 +21,27 @@ Back-end: JavaScript/Node/Express, and API hosting on Herokuapp.com
 
 Front-end: JavaScript, HTML, CSS
 
-To use this repository, please be sure to install the proper packages with:
+Install the dependencies either using NPM or Yarn:
 
-``npm -install``
+Using NPM:
 
-Start up the server using Node with:
+```bash
+# Install dependencies
+$ npm install
 
-``node server.js``
+# Start development server
+$ npm run dev
+```
 
+Using Yarn:
+
+```bash
+# Install dependencies
+$ yarn
+
+# Start development server
+$ yarn dev
+```
 ## Optimizations:
 
 As I learn more, I'd like to apply additional CRUD features (Create/Post, Read/Get, Update/Put, Delete) to make the app more interactive, incorporate a database (example: MongoDB) to store the data and objects, and also incorporate a front-end library (React or Svelte) to make a more complete application.
