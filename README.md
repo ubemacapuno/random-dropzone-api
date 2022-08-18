@@ -21,7 +21,7 @@ Back-end: JavaScript/Node/Express, and API hosting on Herokuapp.com
 
 Front-end: JavaScript, HTML, CSS
 
-Install the dependencies either using NPM:
+Install the dependencies. If using NPM:
 
 ```bash
 # Install dependencies
