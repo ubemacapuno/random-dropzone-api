@@ -309,7 +309,7 @@ app.get('/random4/', (request, response)=>{
         default:
             randomDropZoneFour = 'Encountered error in Random 4 calculation!'
     }
-    response.json(randomDropZoneThree.dropzone)
+    response.json(randomDropZoneFour.dropzone)
 })
 
 app.listen(process.env.PORT || PORT, ()=>{ //process.env.PORT basically says use whatever port Heroku or host provides us.
