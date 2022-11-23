@@ -5,7 +5,7 @@ This API randomly generates map locations for the videogame, Call of Duty: Warzo
 
 The API is hosted on Herokuapp.com. The frontend app is also hosted on <a target="_blank" href="https://random-dropzone.netlify.app/"><strong>Netlify</strong></a>.
 
-<i><strong>*Please Note:</strong> The server is hosted on a free Herokuapp.com account, so please allow 15-30 seconds for their dyno to respond.</i>
+<i><strong>*Please Note:</strong> The server is hosted on a FREE Railway account, so responsiveness may not be reliable!</i>
 
  <tr>
     <td width="100%"  style="align:center;" valign="top">
