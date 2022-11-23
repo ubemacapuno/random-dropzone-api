@@ -71,6 +71,31 @@ const winery = new FortunesKeepPOI("Winery", "Fortune\'s Keep")
 const lighthouse = new FortunesKeepPOI("Lighthouse", "Fortune\'s Keep")
 const camp = new FortunesKeepPOI("Camp", "Fortune\'s Keep")
 
+class AlMazrahPOI {
+    constructor(dropzone, map){
+        this.dropzone = dropzone
+        this.map = map
+    }
+}
+const fortress = new AlMazrahPOI("Fortress","Al Mazrah")
+const airport = new AlMazrahPOI("Airport","Al Mazrah")
+const sarrifBay = new AlMazrahPOI("Sarrif Bay","Al Mazrah")
+const sawahVillage = new AlMazrahPOI("Sawah Village","Al Mazrah")
+const cemetery = new AlMazrahPOI("Cemetery","Al Mazrah")
+const ahkdarVillage = new AlMazrahPOI("Ahkdar Village","Al Mazrah")
+const observatory = new AlMazrahPOI("Observatory","Al Mazrah")
+const saidCity = new AlMazrahPOI("Sa'id City","Al Mazrah")
+const port = new AlMazrahPOI("Port", "Al Mazrah")
+const alSharimPass = new AlMazrahPOI("Al Sharim Pass", "Al Mazrah")
+const caves = new AlMazrahPOI("Caves", "Al Mazrah")
+const marshlands = new AlMazrahPOI("Marshlands", "Al Mazrah")
+const hydroElectric = new AlMazrahPOI("Hydroelectric", "Al Mazrah")
+const quarry = new AlMazrahPOI("Quarry", "Al Mazrah")
+const rohanOil = new AlMazrahPOI("Rohan Oil", "Al Mazrah")
+const alMazrahCity = new AlMazrahPOI("Al Mazrah City", "Al Mazrah")
+const taraqVillage = new AlMazrahPOI("Taraq Village", "Al Mazrah")
+const oasis = new AlMazrahPOI("Oasis", "Al Mazrah")
+
 
 
 app.get('/api/', (request, response)=>{ //looks like an EVENT LISTENER! Instead of a "click", it is a network request. 
@@ -219,6 +244,70 @@ app.get('/random3/', (request, response)=>{
             break;
         default:
             randomDropZoneThree = 'Encountered error in Random 3 calculation!'
+    }
+    response.json(randomDropZoneThree.dropzone)
+})
+
+app.get('/random4/', (request, response)=>{ 
+    let randomNum = Math.ceil(Math.random()*18)
+    let randomDropZoneFour = ""
+    switch (randomNum){
+        case 1:
+            randomDropZoneFour = fortress;
+            break;
+        case 2:
+            randomDropZoneFour = airport;
+            break;
+        case 3:
+            randomDropZoneFour = sawahVillage;
+            break;
+        case 4:
+            randomDropZoneFour = cemetery;
+            break;
+        case 5:
+            randomDropZoneFour = ahkdarVillage;
+            break;
+        case 6:
+            randomDropZoneFour = observatory;
+            break;
+        case 7:
+            randomDropZoneFour = saidCity;
+            break;
+        case 8:
+            randomDropZoneFour = port;
+            break;
+        case 9:
+            randomDropZoneFour = alSharimPass;
+            break;
+        case 10:
+            randomDropZoneFour = caves;
+            break;
+        case 11:
+            randomDropZoneFour = marshlands;
+            break;
+        case 12:
+            randomDropZoneFour = hydroElectric;
+            break;
+        case 13:
+            randomDropZoneFour = quarry;
+            break;
+        case 14:
+            randomDropZoneFour = rohanOil;
+            break;
+        case 15:
+            randomDropZoneFour = alMazrahCity;
+            break;
+        case 16:
+            randomDropZoneFour = taraqVillage;
+            break;
+        case 17:
+            randomDropZoneFour = sarrifBay;
+            break;
+        case 18:
+            randomDropZoneFour = oasis;
+            break;
+        default:
+            randomDropZoneFour = 'Encountered error in Random 4 calculation!'
     }
     response.json(randomDropZoneThree.dropzone)
 })
