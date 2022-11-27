@@ -312,6 +312,6 @@ app.get('/random4/', (request, response)=>{
     response.json(randomDropZoneFour.dropzone)
 })
 
-app.listen(process.env.PORT || PORT, ()=>{ //process.env.PORT basically says use whatever port Heroku or host provides us.
+app.listen(process.env.PORT || PORT, ()=>{ //process.env.PORT basically says use whatever port Railway or host provides us.
     console.log(`Server is running . . . \nBetter go catch it! On port ${PORT}`)
 })

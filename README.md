@@ -1,9 +1,9 @@
 # Random DropZone API (COD - Warzone): 
 # Visit the <a target="_blank" href="https://codepen.io/corey-damocles/pen/RwQdeWG">Frontend App on codepen.io</a>!
 
-This API randomly generates map locations for the videogame, Call of Duty: Warzone where players can land and start their Battle Royale experience. The maps for these APIs are Rebirth Island, Caldera, and Fortune's Keep.
+This API randomly generates map locations for the videogames, Call of Duty: Warzone 1 & 2 where players can land and start their Battle Royale experience. The maps for these APIs are Al Mazrah, Rebirth Island, Caldera, and Fortune's Keep.
 
-The API is hosted on Herokuapp.com. The frontend app is also hosted on <a target="_blank" href="https://random-dropzone.netlify.app/"><strong>Netlify</strong></a>.
+The API is hosted on Railway.app
 
 <i><strong>*Please Note:</strong> The server is hosted on a FREE Railway account, so responsiveness may not be reliable!</i>
 
@@ -17,7 +17,7 @@ The API is hosted on Herokuapp.com. The frontend app is also hosted on <a target
 
 **Tech used:** 
 
-Back-end: JavaScript/Node/Express, and API hosting on Herokuapp.com
+Back-end: JavaScript/Node/Express, and API hosting on Railway.app
 
 Front-end: JavaScript, HTML, CSS
 
